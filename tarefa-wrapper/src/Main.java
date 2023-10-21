@@ -1,5 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        int age = 18;
+        System.out.println(age);
+        Integer age2 = age;
+        System.out.println(age2);
+
     }
 }
