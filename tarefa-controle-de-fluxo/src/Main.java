@@ -23,7 +23,7 @@ public class Main {
         sc.close();
 
         double soma = 0;
-        for (Double i: notas){
+        for (Double i : notas) {
             soma += i;
         }
 
@@ -31,11 +31,11 @@ public class Main {
 
         System.out.println("Sua Media anual foi: " + media);
 
-        if(media > 7){
+        if (media >= 7) {
             System.out.println("APROVADO");
-        }else if (media > 5 && media < 7){
+        } else if (media >= 5 && media < 7) {
             System.out.println("RECUPERAÇÂO");
-        }else{
+        } else {
             System.out.println("REPROVADO");
         }
     }
