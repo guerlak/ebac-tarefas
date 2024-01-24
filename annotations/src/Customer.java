@@ -1,5 +1,4 @@
-@Tabela("customers")
+@Tabela(value = "customers")
 public class Customer {
-
 
 }
