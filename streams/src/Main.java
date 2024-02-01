@@ -9,8 +9,10 @@ public class Main {
 
         List<Customer> customers = new ArrayList<>();
 
-        System.out.println("Escreva nome e sexo da pessoa: Ex- > [camila,F)");
-        System.out.println("Para sair digite: S");
+        System.out.println("Digite o nome e a inicial do sexo (F: Feminino - M: Masculino) do cliente:");
+        System.out.println("Exemplo -> Camila,F | Para sair digite: S");
+
+        System.out.println("--------------");
         Scanner scanner = new Scanner(System.in);
 
         String input = "";
@@ -38,9 +40,9 @@ public class Main {
         }
 
         System.out.println("Clientes homens:");
-        customers.stream().filter(c -> c.getMale().equals("f")).forEach(c -> System.out.println(c.getName()));
-        System.out.println("Clientes mulheres:");
         customers.stream().filter(c -> c.getMale().equals("m")).forEach(c -> System.out.println(c.getName()));
+        System.out.println("Clientes mulheres:");
+        customers.stream().filter(c -> c.getMale().equals("f")).forEach(c -> System.out.println(c.getName()));
 
         scanner.close();
     }
